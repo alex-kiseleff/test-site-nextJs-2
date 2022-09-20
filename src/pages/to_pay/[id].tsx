@@ -43,7 +43,7 @@ const ToPayComponent: NextPage<IProps> = ({ operatorCurrent }) => {
 			sum: value.sum,
 		};
 
-		const response = await fetch(`${process.env.API_HOST}/api/to_payAPI`, {
+		const response = await fetch(`/api/to_payAPI`, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(dataForSend),
