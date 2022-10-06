@@ -1,6 +1,6 @@
 # Тестовое задание
 
-Работа приложения здесь: [*демо*][ссылка]((https://test-site-next-js-2-l2v2rg2mb-alex-kiseleff.vercel.app/)).  
+Работа приложения здесь: [*ссылка*](https://test-site-next-js-2-l2v2rg2mb-alex-kiseleff.vercel.app/).  
 Стэк: *Next.js*, *TypeScript*, *React Hooks*, *Styled-Components*.  
 Обращение к API эмулированы рандомно, в случае успеха - переход на главный экран и запись данных в файл *DATA_BASE.json*.  
 Верстка адаптивная, на маленьких разрешениях появляется "бургер" меню.  
