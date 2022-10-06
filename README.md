@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Тестовое задание
 
-## Getting Started
+Работа приложения здесь: [*демо*]((https://test-site-next-js-2-l2v2rg2mb-alex-kiseleff.vercel.app/)).  
+Стэк: *Next.js*, *TypeScript*, *React Hooks*, *Styled-Components*.  
+Обращение к API эмулированы рандомно, в случае успеха - переход на главный экран и запись данных в файл *DATA_BASE.json*.  
+Верстка адаптивная, на маленьких разрешениях появляется "бургер" меню.  
+В форме оплаты присутствует маска и валидация, в случае неверного ввода выводится сообщение, 
+кнопка становится активной только если введенные данные валидны.  
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Что беспокоит:
+ - не вынесена логика из компонентов;
+ - при холодном запуске, при переключении вкладок меню, идет лишний рендер;
+ - возможно мало переиспользовал компоненты (но это мое первое знакомство со *Styled-Components*);
+ - цвета на мониторе ноутбука "спокойные", но на внешнем мониторе они более "кислотные", переделывать не стал, не знаю какой из мониторов неверно отображает цвета;
+ - нужна оптимизация и рефакторинг;
+ - убрал всплывающее сообщение при случае неудачного ответа сервера;
+ - возможно мало использовано защиты от *null* и *undefined*, пронадеялся на *TypeScript*;
+ - не сделал плейсхолдер при вводе номера телефона, посчитал что всплывающего сообщения хватит.
